@@ -1,0 +1,1 @@
+{"version":3,"sources":["./src/styles.css"],"sourcesContent":["/* You can add global styles to this file, and also import other style files */\n* {\n    margin: 0;\n}\n"],"mappings":"AACA,EADA","names":[],"sourceRoot":"webpack:///","file":"styles.e1966477944528a1.css","x_google_ignoreList":[]}
