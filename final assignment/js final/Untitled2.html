@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <h1 id="key">
+     </h1>
+     <!-- <p id="element"></p>
+     <p id= "name"> Name </p>
+     <p id= "email"> Email </p>
+     <p id= "dob"> Date of birth </p>
+
+     <p id= "checkbox1"> Individual </p>
+     <p id= "checkbox"> Organization </p> -->
+     <!-- <p id= "interests"> Interest </p> -->
+
+
+     <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="row">#</th>
+            <th > Key</th>
+            <th colspan="2">Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Name</td>
+            <td id= "name"  colspan="2"></td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Email</td>
+            <td id= "email"  colspan="2"></td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td> Date of Birth</td>
+            <td id= "dob" colspan="2"></td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td> Interest </td>
+            <td id= "interests" colspan="2"></td>
+          </tr>
+        </tbody>
+      </table>
+
+    <!-- <script>
+        const prams=new URLSearchParams(location.search);
+    
+        for(const [key,value] of prams)
+        {
+            console.log('${key}:${value}');
+            document.getElementById('element').innerHTML+=value+',\n';
+            document.getElementById('key').innerHTML+=key +',\n';
+
+        }
+    </script>  -->
+
+    <script>
+        const prams=new URLSearchParams(location.search);
+
+        for(const [key,value] of prams)
+        {
+           
+            // console.log('${key}:${value}');
+            // document.getElementById('key').innerHTML+=key +',\n';
+            // document.getElementById('element').innerHTML+=value+',\n';
+            if(key=="name")
+            {
+                document.getElementById('name').innerText=''+value+'\n';
+            }
+            if(key=="email")
+            {
+                document.getElementById('email').innerText=' '+value+'\n';
+            }
+            if(key=="dob")
+            {
+                document.getElementById('dob').innerText=' '+value+'\n';
+            }
+            if(key=="interests")
+            {
+                document.getElementById('interests').innerText=''+value+'\n';
+            }
+            if(key=="checkbox1")
+            {
+                document.getElementById('checkbox1').innerText+=': '+value+'\n';
+            }
+            if(key=="checkbox")
+            {
+                document.getElementById('checkbox').innerText+=': '+value+'\n';
+            }
+        }
+    </script> 
+    
+    <!-- <p id="change">
+        the inner elements are
+    </p>
+<script>
+    let store=document.getElementById("change");
+    // var ij=1
+        const params = new URLSearchParams(location.search);
+        for(thing of params)
+        {
+
+            console.log(thing);
+            {store.innerText+=thing} ;  
+        } -->
+    
+         
+
+</script>
+</body>
+</html>

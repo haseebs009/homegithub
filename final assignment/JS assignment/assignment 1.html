@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="assignment 1.css">
+        <script src="index.js"></script>
+    </head>   
+    <body>
+        <h1>Please Enter form data</h1>
+        <form >
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" size="60%"><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" size="60%"><br><br>
+        <label for="dob">DOB:</label><br>
+        <input type="date" id="dob" name="dob" size="60%"><br><br>
+        <label for="interest">Select your interest:</label><br>
+        <select id="interest" name="interest" width:100%>
+          <option value="Engineering">Engineering</option>
+          <option value="Technology">Technology</option>
+          <option value="Games">Games</option>
+          <option value="Movies">Movies</option>
+        </select>
+        <br>
+        <br>
+        <input type="radio" id="individual" name="fav_language" value="Individual">
+        <label for="individual">individual</label>
+        <input type="radio" id="organization" name="fav_language" value="organization">
+        <label for="organization">organization</label><br>
+               &nbsp;
+        <label for="txtbx">About you</label> 
+               <textarea id="txtbx" name="txtbx" rows="4" cols="50"> </textarea>
+        <div id="submit">
+            <button onclick="getElements()">Send detils </button>
+         
+        </div>
+      </form> 
+</body>
+</html>

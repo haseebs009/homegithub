@@ -1,0 +1,27 @@
+.item {
+	padding: 10px 15px;
+	background-color: #FFF;
+	border-bottom: 1px solid #DDD;
+}
+
+
+.item .content {
+margin-left: 70%;
+}
+
+.item.done .content {
+	text-decoration: line-through;
+}
+
+.item-input {
+	display: block;
+	width: 100%;
+	padding: 10px 15px;
+	appearance: none;
+	border: none;
+	background-color: #F3F3F3;
+	margin-top: 15px;
+	font-size: 20px;
+	outline: none;
+}
+

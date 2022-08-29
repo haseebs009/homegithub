@@ -1,0 +1,56 @@
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"> Add Employee </button>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Employee ID</th>
+      <th scope="col">Name</th>
+      <th scope="col">Crud</th>
+
+    </tr>
+  </thead>
+  <tbody *ngFor="let emp of empl;let i = index">
+    <tr>
+      <td scope="row"> {{empl[i].ID}}</td>
+      <td scope="row"> {{empl[i].Name}}</td>
+      <button type="button" class="btn btn-warning" (click)="Delete(emp.ID)" scope="row"> Delete</button>
+      &nbsp;
+      <button type="button" class="btn btn-warning" (click)="showdetails(emp.ID)" scope="row"> Show Details</button>
+    </tr>
+  </tbody>
+</table>
+
+<!-- Modal for Adding employee -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Add Employee</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div *ngIf="editClicked==true">
+          <form [formGroup]="formValue" (ngSubmit)="PostEmp()">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" ngModel pattern="[a-zA-Z ]*" formControlName="enterName" class="form-control" id="Name"
+                placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+              <label for="designation">Name</label>
+              <input type="text" ngModel pattern="[a-zA-Z ]*" formControlName="Designation" class="form-control" id="Designation"
+                placeholder="Enter your Designation">
+            </div>
+            <button [disabled]="!formValue.valid" type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>

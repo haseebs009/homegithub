@@ -1,0 +1,213 @@
+﻿using System;
+using System.Collections.Generic;
+
+namespace q3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Q.1: Write a program that asks the user for their name and greets them with their name. (e.g., Hello Word!)
+           // Greeting();
+
+            //Q.2: Write a function that checks whether a number is even or odd.
+           // EvenorOdd();
+
+            //Q.3: Write a program that asks a user for 2 numbers and show their sum
+          //  Sum();
+
+            //Q.4: Write a function that checks whether an element occurs in a list.
+           CheckElementinList();
+
+            //Q.5: Write a function that returns the largest element in a list.
+           // ReturnstheLargestElement();
+
+            //Q.6: Write a program that asks a user for number and prints the multiplication table of that number
+           // MultiplicationTable();
+
+            //Q.7: Write a function that returns the elements on odd positions in a list.
+          //  Elementsonoddpositions();
+
+            //Q.8: Write a function that checks whether a number is prime or not.
+         //  PrimeorNot();
+
+            //Q.9: Print the pattern
+           // StarPattern();
+
+            //Q.10: Print the pattern
+           // numericpattern();
+
+            //Q.11: Write a function that tests whether a string is a palindrome. (definition ? even / odd) - Bonus
+           // Palindrome();
+        }
+
+        static void Greeting()
+        {
+            Console.Write("Enter your name:");
+
+            string Name = Console.ReadLine();
+
+            Console.WriteLine("Hello " + Name);
+        }
+        static void EvenorOdd()
+        {
+            int i;
+            Console.Write("Enter a Number : ");
+            i = Convert.ToInt32(Console.ReadLine());
+            if (i % 2 == 0)
+            {
+                Console.WriteLine("Entered Number is an Even Number");
+            }
+            else
+            {
+                Console.WriteLine("Entered Number is an Odd Number");
+
+            }
+
+        }
+        static void Sum()
+        {
+            int i;
+            int j;
+            Console.WriteLine("Enter Number 1 ");
+
+            i = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter Number 2 ");
+            j = Convert.ToInt32(Console.ReadLine());
+            int z = i + j;
+            Console.WriteLine("The sum of two numbers is " + z);
+        }
+        static void CheckElementinList()
+        {
+            List<int> mylist = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            Console.WriteLine("Enter Number to check");
+            bool check = mylist.Contains(Convert.ToInt32(Console.ReadLine()));
+            Console.WriteLine(check);
+
+        }
+        static void ReturnstheLargestElement()
+        {
+            List<int> mylist = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            int biggest = mylist[0];
+            for (int i = 1; i < mylist.Count; ++i)
+            {
+                if (mylist[i] > biggest)
+                {
+                    biggest = mylist[i];
+                }
+            }
+            Console.WriteLine("Largest number of array is " + biggest);
+        }
+        static void MultiplicationTable()
+        {
+            Console.Write("Enter a number:");
+            int number = Convert.ToInt32(Console.ReadLine());
+
+            for (int i = 1; i < 11; ++i)
+            {
+                int j = number * i;
+                Console.WriteLine(number + "*" + i + "=" + j);
+
+            }
+
+        }
+        static void Elementsonoddpositions()
+        {
+            List<int> mylist = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+
+            for (int i = 0; i < mylist.Count; ++i)
+            {
+                int j = i + 1;
+                if (j % 2 != 0)
+                {
+                    Console.WriteLine(mylist[i]);
+
+                }
+            }
+
+        }
+        static void PrimeorNot()
+        {
+            Console.WriteLine("Enter Number ");
+            int p = 6;
+
+            int i = Convert.ToInt32(Console.ReadLine());
+            int j;
+            for (j = 2; j < i; j++)
+            {
+                if (i % j == 0)
+                {
+                    Console.WriteLine("Entered Number is not prime");
+                    p = 5;
+                    i = j;
+                }
+            }
+            if (p == 6)
+            { Console.WriteLine("Entered Number is prime"); }
+
+        }
+        static void StarPattern()
+        {
+            Console.WriteLine("*");
+            Console.WriteLine("**");
+            Console.WriteLine("***");
+            Console.WriteLine("****");
+            Console.WriteLine("*****");
+
+            int j = 1;
+            int i = 1;
+            for (j = 1; j < 6; j++)
+            {
+
+                for (i = 1; i < j; i++)
+                {
+                    Console.Write("*");
+                }
+                Console.WriteLine("*");
+            }
+        }
+        static void numericpattern()
+        {
+            int j = 1;
+            int i = 1;
+            for (j = 1; j < 6; j++)
+            {
+
+                for (i = 1; i < j; i++)
+                {
+                    Console.Write(i);
+                }
+                Console.WriteLine(i);
+            }
+
+        }
+        static void Palindrome()
+        {
+            string pal = "iqmaqddqamqi";
+            int b = pal.Length;
+            b = b - 1;
+            int a;
+            int p = 9;
+            for (a = 0; a < b; a++)
+            {
+
+                if (pal[a] != pal[b])
+                {
+                    Console.WriteLine("The entered string is not a palindrome");
+                    p = 3;
+                    a = b;
+
+                }
+
+                b = b - 1;
+
+            }
+            if (p != 3)
+            {
+                Console.WriteLine("The entered string is a palindrome");
+            }
+
+        }
+
+    }
+}

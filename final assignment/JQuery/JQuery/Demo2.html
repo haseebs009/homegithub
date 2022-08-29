@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>jQuery Demo</title>
+        <style>
+            #div2{
+                background-color: aquamarine;
+                height: 200px;
+                width: 200px;
+                position: absolute;
+            }
+
+        </style>
+        <script src="jquery.min.js"></script>        
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("#button").click(function(){
+                    $("p").append("Some appended text.")
+                });
+                $("#btn").click(function(){
+                  //  $("#div2").toggle();
+                    $("#div2").animate({
+                      right:'250px',
+                      opacity:'0.5',
+                      height:'150px',
+                      width:'150px'
+
+                    },1000,function(){alert("done")});
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div>
+            <p>this ia a paragraph</p>
+            <button id="button">done</button>
+        </div>
+        <button id="btn">Hide</button>
+        <div id = "div2"> 
+        </div>
+        
+    </body>
+</html>

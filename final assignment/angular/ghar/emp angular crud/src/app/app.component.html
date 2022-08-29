@@ -1,0 +1,2 @@
+<app-employeelist (detailEmit)="Employeedetail=$event" [changeFun]="changeList"></app-employeelist>
+<app-employeedetail (empListChanged)="changeList=$event" [detailEmit]="Employeedetail"></app-employeedetail>

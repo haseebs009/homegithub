@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>jQuery Demo</title>
+        <style>
+            #div2{
+                background-color: aquamarine;
+                height: 200px;
+                width: 200px;
+                position: absolute;
+            }
+            img
+            {
+                max-width: 100%;
+            }
+
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>        
+
+    </head>
+    <body>
+        
+        <div id = "div2"> 
+            <p><img src="contactus.jpg" alt=""></p> 
+            <button id="btn"> hehh</button>
+        </div>
+        <script type="text/javascript">
+          
+          $(document).ready
+          (function()
+          {
+          
+            $("button").click(function()
+            {
+                $("p").animate(
+                    {left: '250px',
+                    opacity: '0.5',
+                    height: '150px',
+                    width: '150px'
+            }
+                )
+                      
+        }
+            )
+    }
+          )
+              
+         </script>
+    </body>
+</html>

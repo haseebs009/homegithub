@@ -1,0 +1,307 @@
+*{
+    font-family: arial ;
+    color : #333;
+    }
+
+*{
+    padding:0px;
+     margin:0px
+}
+.clear 
+{ clear : both; 
+} 
+#box
+{
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-image: url(banner.jpg) ;
+    border-radius: 2%;
+    background-repeat: no-repeat;
+   }
+header
+{
+    padding-top: 0px;
+    margin-top: -30px;
+    
+}
+.hd{
+    overflow:hidden;
+    padding-left: 10%;
+    padding-right: 10%;
+    clear : both; 
+}
+body{
+overflow:auto;
+}
+.class1{
+    padding: 0px;     
+    margin: 0px;
+    float:left;
+         
+        }
+.class2{
+  padding-top: 50px;     
+    margin: 0px;
+   float:right;
+
+}
+.class2 nav a
+{
+border: 1px transparent;
+}
+.class2 nav a:hover
+{
+border: 1px solid rgb(0, 0, 0);
+}
+
+.nav{
+  
+    text-decoration:none;
+    color:#000000;
+    margin:4px;
+}
+
+.center{
+    text-align:center; 
+    padding: 3% 10% 1% 10%;
+ }
+ .centerp{
+    text-align:center; 
+    padding: 0% 10% 1% 10%;
+ }
+ .c
+ {
+    text-align: center;
+    margin-top: 2%;
+    margin-left: 0;
+    margin-bottom: 2%; 
+ }
+.button{
+    background-color: #afd021;
+    color:#000000;
+    text-decoration:none;
+    text-align:center; 
+    padding: 10px 30px 10px 30px;
+    font-size: 22px;
+    border-radius: 2%;
+    }
+.border {
+
+    float:left;
+    padding-right: 4%;
+    width: 17%;
+}
+
+.leftborder {
+    margin-left: 10%;   
+    padding-right: 4%;
+    float: left;
+    text-align: center;
+    width: 17%;
+    background-size: contains;
+    }
+.width
+{
+    max-width: 100%;
+}
+.rightborder {
+    margin-right: 10%;  
+    float: left;
+    text-align: center;
+    width: 17%;  
+}
+.textbox
+{
+   margin-top: 4%;
+    float:left;
+    margin-left: 10%;
+    text-align: left;
+    width: 40%;
+}
+
+.imageright
+{
+    max-width:20%;
+    margin-top: 4%;
+    float: right;
+    margin-right: 14%;
+}
+select{
+    width: 95%;
+    padding: 10px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+input[type=text], [type=email], [type=date] 
+{
+    width: 95%;
+    padding: 10px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+.imagesize
+{
+    max-width: 120%;
+}
+
+.linepadding
+{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+hr{
+    border: none;
+    border-top: solid 1px rgb(194, 189, 189);
+}
+#box2
+{
+    margin: 1.5% 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-image: url(qurestions-banner.jpg);
+    background-size: 120%;  
+    border-radius: 2%;
+    background-repeat: no-repeat;
+}
+ .paddingtop
+ {
+    padding-top: 4%;
+    margin-left: 10%;
+ }
+
+th
+{
+    background-color: #e7e2e2;
+    padding-top:20px;
+    padding-bottom: 20px;
+    text-align: left;
+}
+ td
+ {
+    font-size: small;
+    border-top: 0.5px solid;
+    font-weight: 100;
+    padding-top:10px;
+    padding-bottom: 10px;
+   
+ }
+ table
+ {
+    border-collapse: collapse;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+ }
+ input
+ {
+    height: 3%;
+ }
+ 
+ .form
+{
+   width: 40%;
+    margin: 2% 0% 2% 10%;
+    float: left;
+}
+.formpic
+{
+    width: 40%;
+    margin: 100px 10% 5% 0%;
+    float: right;
+    background-color: #d4ddda;
+}
+.formpic1{
+    margin-left: 45px;
+    padding-bottom: 2%;
+}
+#textpad
+{
+    padding:0% 4% 4% 4%;
+}
+.image1size
+{
+    padding:4% 4% 0% 4%;
+    max-width: 92%;
+    border-radius: 8%;
+}
+input [type= "date"]
+{
+    width: 100%;
+}
+.contact
+{
+    background-color: #d4ddda;
+    padding: 5% 0% 5% 0% ;
+}
+.textleft
+{
+    padding: 0% 40% 0% 10%;
+}
+.copyright
+{
+    background-color: #000000;
+    text-decoration-color: #fff;
+    text-align: center;
+    padding: 0.3%;
+}
+.textcolor
+{
+    color: #fff;
+}
+.zero
+{
+    padding:0px; 
+    margin:0px
+}
+.button {
+    background-color: #AFD021;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4% 2%;
+  }
+  textarea
+  {
+    width: 95%;
+  }
+  .button2 {
+    background-color: #d0b621;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4% 2%;
+  }
+  .c1{
+
+       text-align: left;
+       margin-top: 2%;
+       margin-left: 0;
+       margin-bottom: 2%; 
+  
+  }
+  .button1 {
+  
+    border: 1px solid black;
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    margin-left: 0%;
+  
+  }
+  #textleft1
+  {
+text color: blue;
+  }

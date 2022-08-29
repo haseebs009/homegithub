@@ -1,0 +1,23 @@
+<div class="items">
+  <!-- Reactive form -->
+  <form (submit)="additem()">
+    <input type="text" name="inputitem" placeholder="Enter Item." class="item-input" [(ngModel)]="inputitem" />
+    <input type="submit" value="Add item" class="btn btn-warning" style="margin-left: 45%" />
+  </form>
+  <!-- Table to display the entered items -->
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Items</th>
+
+      </tr>
+    </thead>
+    <tbody *ngFor="let item of items; let i = index;" class="item">
+      <tr>
+        <th scope="row">{{ i }}</th>
+        <td>{{ item.content }}</td>
+
+      </tr>
+    </tbody>
+  </table>
